@@ -2,11 +2,11 @@
   "name": "common",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {},
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "figlet": "^1.5.0",
     "rxjs": "^6.6.2"
   }
 }
