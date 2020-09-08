@@ -1,3 +1,4 @@
-import {AsciiString} from "common/common-const";
+import { AsciiString } from 'common/common-const';
 
-export const ExtraAscii = (str) => AsciiString(str).then(str => `EXTRA: ${str}`);
+export const ExtraAscii = (str) =>
+  AsciiString(str).then((pStr) => `EXTRA: ${pStr}`);
