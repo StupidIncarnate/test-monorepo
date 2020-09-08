@@ -13,6 +13,7 @@ module.exports = (api) => {
         },
       },
     ],
+    '@babel/preset-react',
   ];
   const plugins = [
     [
@@ -26,6 +27,7 @@ module.exports = (api) => {
         loglevel: 'verbose',
       },
     ],
+    '@babel/plugin-transform-react-jsx',
   ];
 
   return {
