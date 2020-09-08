@@ -2,7 +2,6 @@ import React from 'react';
 import logo from './logo.svg';
 import styled from 'styled-components';
 import './App.css';
-// import {CommonConst} from "../../lib/common/src/common-const";
 
 const Info = styled.div`
   color: darkred;
@@ -13,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Info>Hi there!!!!</Info>
-      {/*{Object.keys(CommonConst)}*/}
+      {Object.keys({})}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
