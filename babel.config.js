@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = (api) => {
   api.cache(true);
 
+  console.log('What forth path?', path.resolve(__dirname));
   const presets = [
     [
       '@babel/preset-env',

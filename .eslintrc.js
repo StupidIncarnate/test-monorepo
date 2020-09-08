@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   env: {
     browser: true,
@@ -22,9 +24,6 @@ module.exports = {
     },
     ecmaVersion: 2018,
     sourceType: 'module',
-    babelOptions: {
-      configFile: './babel.config.js',
-    },
   },
   plugins: ['import', 'react', 'prettier'],
   rules: {
@@ -33,6 +32,15 @@ module.exports = {
     'import/prefer-default-export': 'off',
   },
   settings: {
-    'import/resolver': { 'babel-module': {} },
+    'import/resolver': {
+      'babel-module': {
+        root: [path.resolve(__dirname)],
+        alias: {
+          common: path.resolve(__dirname, './containers/lib/common/src'),
+          extra: path.resolve(__dirname, './containers/lib/extra/src'),
+        },
+        loglevel: 'verbose',
+      },
+    },
   },
 };
